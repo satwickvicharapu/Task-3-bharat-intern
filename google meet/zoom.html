@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Video conference Clone</title>
+    <link rel="icon" href="./images/favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/7433d3320f.js" crossorigin="anonymous"></script>
+    <style>
+    .container {
+        padding:40px;
+        display: flex;
+        justify-content: center;
+    }
+    .home{
+        font-size: 50px;
+        margin-left : -50px;
+        color : black;
+    }
+    .logo{
+        margin-left :-30px;
+        margin-top :-15px;
+        
+    }
+    a:hover{
+        color : blue;
+        text-decoration : none;
+
+    }
+    .nav1{
+        margin-left : 15px;
+        color : black;
+    }
+    .nav2{
+        margin-left : 12px;
+        color : black;
+    }
+    .nav3{
+        margin-left : 12px;
+        color : black;
+    }
+    .nav4{
+        margin-left : 10px;
+        color : black;
+    }
+    #header_sign_btn{
+        margin-left : 100px;
+        margin-top : -5px;
+        color : black;
+    }
+    #header_join_btn{
+        margin-left : 30px;
+        margin-top : -5px;
+        color : blue;
+        background-color : white;
+        border : 2px solid black;
+        width : 140px;
+    }
+    #header_start_btn{
+        margin-left : 20px;
+        margin-top : -5px;
+        color : whitesmoke;
+        background-color : blue;
+        border : 2px solid blue;
+        width : 160px;
+    }
+    {
+        background-color : blue;
+
+    }
+    .container1{
+        position : relative;
+        background-color : #FFE79B;
+        width : 200vh;
+        height : 60px;
+        display : flex;
+        justify-content: center;
+        align-items: center;
+        color : black;
+    }
+    .premium_meeting {
+        padding-right: 0px !important;
+        width: 100% !important;
+    }
+
+    .start_meeting {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .start_meeting>button {
+        margin-bottom: 5px;
+    }
+
+    #first-image {
+        margin-right: 0px;
+    }
+
+    .first-image-parent {
+        display: flex;
+        justify-content: end;
+    }
+    .start_meeting {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .start_meeting>button {
+        margin-bottom: 5px;
+    }
+    </style>    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#">
+                <img class="logo" src="logo1.png" alt="logo">
+            </a>
+            <nav aria-label="navigational links" class="google">
+
+                <a href="https://workspace.google.com/intl/en_in/?utm_source=google&utm_medium=cpc&utm_campaign=1011352-Workspace-APAC-IN-en-BKWS-EXA-HV&utm_content=text-ad-none-none-DEV_c-CRE_608344336739-ADGP_Hybrid+%7C+BKWS+-+EXA+%7C+Txt+~+G+Suite_1-KWID_43700071931903936-kwd-35154496839&userloc_9302611-network_g&utm_term=KW_google%20suits&gclid=Cj0KCQjw94WZBhDtARIsAKxWG--hDQkZ4ujQiyJjaOAGwqlzkbz8arPgJzMwgXBnBm0dbhqm3r1FIqQaAoLQEALw_wcB&gclsrc=aw.ds"
+                    class="nav1">Solutions</a>
+
+                <a href="https://workspace.google.com/intl/en_in/pricing.html" target="_blank"
+                    class="nav2">Plans &amp; Pricing</a>
+
+                <a href="https://workspace.google.com/intl/en_in/contact-form/?source=gafb-pricing-enterprise-en-IN"
+                    target="_blank" class="nav3">Contact Sales</a>
+
+                <a href="https://workspace.google.com/intl/en_in/training/"
+                    class="nav4">Resources</a>
+            </nav>
+            <button onclick="window.location.href='https://meet.google.com/?hs=193&pli=1';"  id="header_sign_btn">Sign in</button>
+            <button   id="header_join_btn">Join a meeting</button>
+            <button  onclick="window.location.href='https://meet.google.com/wxn-zciz-ife';" id="header_start_btn">Start a meeting</button>
+        </div>
+    </header>
+    <header>
+        <div class="container1">
+            <p class="yellow">Using Meet for work?</p>
+            <a href="https://workspace.google.com/individual/?utm_source=meetforwork&utm_medium=et&utm_content=trywis&utm_campaign=banner&hl=en&o_ref=https:%2F%2Fwww.bing.com%2F" class="anchor1"><u>Try Google Workspace Individual</u></a>
+        </div>
+    </header>
+    
+    <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex md:px-16 px-5 md:py-24 py-12 md:flex-row flex-col items-center">
+            <div
+                class="lg:flex-grow md:w-1/2 md:pr-24 md:pr-16 flex flex-col md:items-start text-left mb-16 md:mb-0 items-center text-center premium_meeting">
+                <h1 class="home">
+                Video calls and mettings for everyone
+                </h1>
+                <p class="mb-6 leading-relaxed w-[90%] md:text-lg text-normal text-gray-800 font-normal">
+                Connect,colloborate,and celebrate from anywhere with Google Meet
+                </p>
+                <div class="flex md:flex-row md:justify-center items-center flex-col start_meeting d-flex ">
+
+                    <button type="button"
+                        class="md:inline-flex text-white bg-blue-600 border-0 py-2 px-6 md:mb-0 mb-4 focus:outline-none hover:bg-blue-800 rounded text-lg flex justify-center d-flex p-2">
+                        <i class="fa-solid fa-video pr-2 py-1.5"></i> Start a meeting
+                    </button>
+
+                    <input type="text" id="join_meeting_input"
+                        class="md:ml-2 pl-5 inline-flex font-normal placeholder:text-gray-500 bg-white border border-gray-300 py-2 px-2 outline-gray-500 rounded text-lg relative"
+                        placeholder="Enter a meeting code">
+                    <p class="md:ml-4 mt-2.5 text-gray-500 font-semibold cursor-pointer text-[17px]">Join</p>
+                </div>
+
+                <a href="https://support.google.com/accounts/answer/27441?hl=en" class="mt-10 font-medium">
+                    Don't have an account?
+                    <span class="text-blue-500 cursor-pointer">Get Started Now</span>
+                </a>
+            </div>
+            <div class="md:max-w-lg md:w-full md:w-1/2 w-5/6 first-image-parent">
+                <img src="first.png" alt="first image" id="first-image"
+                    class="object-cover object-center rounded">
+                <p></p>
+            </div>
+        </div>
+    </section>
+    <!-- mid section  -->
+    <hr class="border border-1 md:mx-24 mx-12">
+    <h2 class="text-center mt-10 font-semibold font-poppins">See what you can do with Google Meet</h2>
+    <i class="fa-solid fa-angle-down flex items-center justify-center mb-10 mt-2 sm:text-xl"></i>
+    <section class="text-gray-600 body-font">
+        <div
+            class="container mx-auto flex md:px-16 px-5 md:pt-10 pt-12 md:py-24 py-12 md:flex-row flex-col items-center">
+            <div
+                class="lg:flex-grow md:w-1/2 md:-mt-12 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-10 font-medium text-gray-900 w-3/4">Meet Safely</h1>
+                <p class="mb-8 leading-relaxed w-[90%] md:text-lg text-normal text-gray-600 font-normal">
+                    Meet uses the same protections that Google uses to secure your information and safeguard your
+                    privacy. Meet video conferences are encrypted in transit, and our array of safety measures are
+                    continuously updated for added protection.
+                </p>
+                <div class="flex justify-center">
+                    <a href="https://support.google.com/a/answer/7582940?hl=en"
+                        class="text-blue-600 font-semibold cursor-pointer">
+                        Learn more about security and compliance
+                    </a>
+                </div>
+            </div>
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <img src="second.png" alt="second image" class="object-cover object-center rounded">
+            </div>
+        </div>
+    </section>
+    <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex md:pt-10 pt-12 md:px-12 md:py-24 py-12 md:flex-row flex-col items-center">
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                <img src="third.png" alt="third image" class="object-cover object-center rounded">
+            </div>
+            <div
+                class="lg:flex-grow md:w-1/2 md:-mt-12 lg:pl-24 md:pl-16 px-5 flex flex-col md:items-start md:text-left items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-10 font-medium text-gray-800">Meet from anywhere</h1>
+                <p class="mb-8 leading-relaxed w-[90%] md:text-lg text-normal text-gray-600 font-normal">
+                    Get the whole crew together in Google Meet, where you can present business proposals, collaborate on
+                    chemistry assignments, or just catch up face to face. <br><br> Businesses, schools, and other
+                    organizations can live stream meetings to 100,000 viewers within their domain.
+                </p>
+                <a href="https://workspace.google.com/intl/en_in/pricing.html" class="flex justify-center">
+                    <p class="text-blue-600 font-semibold cursor-pointer">See plans and pricing for organization</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- third section  -->
+    <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex md:px-12 px-5 pt-12 md:py-24 py-12 md:flex-row flex-col items-center">
+            <div
+                class="lg:flex-grow md:w-1/2 md:-mt-12 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-10 font-medium text-gray-900 w-3/4">Meet on any device
+                </h1>
+                <p class="mb-8 leading-relaxed w-[90%] md:text-lg text-normal text-gray-600 font-normal">
+                    Invited guests can join an online video conference from their computer using any modern web
+                    browser—no software to install. On mobile devices, they can join from the Google Meet app. Guests
+                    can even join meetings from Google Nest Hub Max.
+                </p>
+                <a href="https://edu.google.com/chromebooks/overview/" class="flex justify-center">
+                    <p class="text-blue-600 font-semibold cursor-pointer">Enable hybrid work with Chrome OS devices</p>
+                </a>
+            </div>
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <img src="fourth.png" alt="fourth image" class="object-cover object-center rounded">
+            </div>
+        </div>
+    </section>
+    <!-- fourth section  -->
+    <section class="text-gray-600 body-font">
+        <div
+            class="container mx-auto flex md:pt-10 pt-12 md:px-12 px-5 md:py-24 py-12 md:flex-row flex-col items-center">
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                <img src="fifth.png" alt="fifth image" class="object-cover object-center rounded">
+            </div>
+            <div
+                class="lg:flex-grow md:w-1/2 md:-mt-44 md:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-10 font-medium text-gray-800">Meet clearly</h1>
+                <p class="mb-8 leading-relaxed w-[90%] md:text-lg text-normal text-gray-600 font-normal">Google Meet
+                    adjusts to your network speed, ensuring high quality video calls wherever you are. New AI
+                    enhancements keep your calls clear even when your surroundings aren’t.</p>
+            </div>
+        </div>
+    </section>
+    <!-- fifth section  -->
+    <section class="text-gray-600 body-font">
+        <div
+            class="container mx-auto flex md:px-16 px-5 md:pt-10 pt-12 md:py-24 py-12 md:flex-row flex-col items-center">
+            <div
+                class="lg:flex-grow md:w-1/2 md:-mt-12 -mt-10 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-10 font-medium text-gray-900 w-3/4">Meet with everyone
+                </h1>
+                <p class="mb-8 leading-relaxed w-[90%] md:text-lg text-normal text-gray-600 font-normal">With live
+                    captions powered by Google’s speech recognition technology, Google Meet makes meetings more
+                    accessible. For non-native speakers, hearing impaired participants, or just noisy ee shops, live
+                    captions make it easy for everyone to follow along (available in English only).
+                </p>
+                <a href="https://support.google.com/meet/answer/7313544?hl=en" class="flex justify-center">
+                    <p class="text-blue-600 font-semibold cursor-pointer">Learn more about accessibility features</p>
+                </a>
+            </div>
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <img src="sixth.png" alt="sixth image" class=" object-cover object-center rounded">
+            </div>
+        </div>
+    </section>
+    <!-- footer  -->
+    <footer class="text-gray-600 body-font bg-gray-200">
+        <div class="container md:px-5 py-8 pt-10 mx-auto flex items-center justify-center md:flex-row flex-col">
+            <a href="#" class="flex w-40">
+                <img src="logo2.png" alt="footer logo" class="cursor-pointer">
+            </a>
+            <nav class="md:mx-10 md:mt-0.5 mx-10 mt-4 flex flex-wrap items-center text-base justify-center"
+                aria-label="footer elements">
+
+                <a href="https://about.google/"
+                    class="md:mr-5 mr-3 text-gray-500 font-medium cursor-pointer hover:text-gray-600">About
+                    Google</a>
+
+                <a href="https://about.google/products/"
+                    class="md:mr-5 mr-3 text-gray-500 font-medium cursor-pointer hover:text-gray-600">Google
+                    Products</a>
+
+                <a href="https://policies.google.com/privacy?hl=en" target="_blank"
+                    class="md:mr-5 mr-3 text-gray-500 font-medium cursor-pointer hover:text-gray-600">Privacy</a>
+
+                <a href="https://policies.google.com/terms?hl=en" target="_blank"
+                    class="md:mr-5 mr-3 text-gray-500 font-medium cursor-pointer hover:text-gray-600">Terms</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        let header_join_btn = document.getElementById("header_join_btn")
+let join_meeting_input = document.getElementById("join_meeting_input");
+
+header_join_btn.addEventListener("click", function(e) {
+    join_meeting_input.focus();
+})
+    </script>
+</body>
+
+</html>
